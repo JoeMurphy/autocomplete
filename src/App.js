@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Keyword from "./Keyword";
 //import logo from './logo.svg';
-//https://www.youtube.com/watch?v=U9T6YkEDkMo&t=2837s&ab_channel=developedbyed
 import './App.css';
 
 const App = () => {
