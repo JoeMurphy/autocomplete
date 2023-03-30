@@ -1,0 +1,29 @@
+.results {
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchForm {
+  min-height: 10vh;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border: #282c34;
+}
+
+.searchBar {
+  width: 50%;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.searchButton {
+  background-color: #282c34;
+  border: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
