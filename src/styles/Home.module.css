@@ -1,29 +1,138 @@
-.results {
-  text-align: center;
-  min-height: 100vh;
-  justify-content: center;
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  background-color: #d1defb;
+}
+
+.PageTitle {
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.Heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.searchCard {
+  width: 65%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .searchForm {
-  min-height: 10vh;
   display: flex;
-  padding-top: 20px;
-  justify-content: center;
-  align-items: center;
-  border: #282c34;
+  flex-direction: row;
+  margin-top: 15px;
+  box-shadow: 0 0 5px rgba(116, 116, 116, 0.2);
+  height: fit-content;
 }
 
 .searchBar {
-  width: 50%;
   padding: 10px;
   border-radius: 6px;
+  border: #282c34;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.2);
+  margin-right: 8px;
+  height: fit-content;
 }
 
 .searchButton {
   background-color: #282c34;
   border: #282c34;
   color: white;
-  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.2);
   border-radius: 6px;
+  width: 20%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.loadingHeader {
+  margin: 20px;
+}
+
+.results {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultRowContainer {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  height: 70%;
+  margin-top: 10px;
+}
+
+.resultCard {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border: #282c34;
+  margin: 8px;
+}
+
+.resultCardHeading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.resultCardKeywordContainer {
+  margin: 10px;
+  min-width: 125px;
+  max-width: 300px;
+  overflow: auto;
+  background-color: #d4d4d4;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: left;
+  height: 80%;
+  padding: 4px;
+}
+
+.copyButton {
+  background-color: #282c34;
+  border: #282c34;
+  color: white;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.copyAllButton {
+  background-color: #282c34;
+  border: #282c34;
+  color: white;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  height: fit-content;
+  min-width: fit-content;
+  width: 20%;
+  margin: 8px;
+  cursor: pointer;
 }
