@@ -88,6 +88,7 @@
   align-items: center;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   border: #282c34;
+  border-radius: 6px;
   margin: 8px;
 }
 
@@ -102,9 +103,10 @@
   min-width: 125px;
   max-width: 300px;
   overflow: auto;
-  background-color: #d4d4d4;
+  background-color: #e2e2e24f;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 200;
+  font-size: 0.8rem;
   text-align: left;
   height: 80%;
   padding: 4px;
