@@ -24,17 +24,21 @@ export default function Home() {
 
   function handleCopyAllKeywords(keywords) {
     const allKeywords = Object.values(keywords).flat();
-    navigator.clipboard.writeText(allKeywords.join('\n'));
-    alert(`Copied ${allKeywords.length} keywords from all retailers to clipboard`);
+    navigator.clipboard.writeText(allKeywords.join('\n')).then(() => {
+      alert(`Copied ${allKeywords.length} keywords from all retailers to clipboard`);
+    });
   }
+
   function handleCopyOfRetailer(retailer) {
     // only copy the keywords of the retailer to clipboard
 
     const retailerKeywords = Object.values(keywords[retailer]).flat();
 
-    navigator.clipboard.writeText(retailerKeywords.join('\n'));
-    alert(`Copied ${retailerKeywords.length} keywords from ${retailer} to clipboard`);
+    navigator.clipboard.writeText(retailerKeywords.join('\n')).then(() => {
+      alert(`Copied ${retailerKeywords.length} keywords from ${retailer} to clipboard`);
+    });
   }
+
   return (
     <>
       <Head>
