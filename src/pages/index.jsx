@@ -22,14 +22,15 @@ export default function Home() {
 
   const showResults = isFetched && !isLoading;
 
-  function handleCopyAllKeywords(keywords) {
+  async function handleCopyAllKeywords(keywords) {
     const allKeywords = Object.values(keywords).flat();
+
     navigator.clipboard.writeText(allKeywords.join('\n')).then(() => {
       alert(`Copied ${allKeywords.length} keywords from all retailers to clipboard`);
     });
   }
 
-  function handleCopyOfRetailer(retailer) {
+  async function handleCopyOfRetailer(retailer) {
     // only copy the keywords of the retailer to clipboard
 
     const retailerKeywords = Object.values(keywords[retailer]).flat();

@@ -19,7 +19,7 @@
   margin-bottom: 25px;
 }
 .searchCard {
-  width: 65%;
+  width: 80%;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -136,5 +136,43 @@
   min-width: fit-content;
   width: 20%;
   margin: 8px;
+
   cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .PageTitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .Heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .searchCard {
+    width: 90%;
+  }
+  .searchBar {
+    width: 60%;
+  }
+  .searchButton {
+    width: 40%;
+  }
+  .resultCard {
+    width: 180px;
+    height: 250px;
+  }
+  .resultRowContainer {
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden; */
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  .copyAllButton {
+    margin-bottom: 20px;
+  }
 }
